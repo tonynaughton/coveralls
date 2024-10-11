@@ -6,6 +6,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+
       - name: Checkout code
         uses: actions/checkout@v2
 
