@@ -6,10 +6,13 @@ type GreetingProps = {
 };
 
 const Greeting: React.FC<GreetingProps> = ({ name, country }) => {
+  const isAdmin = name === 'Tony';
+  
   return (
     <div>
       <h1>Hello, {name}!</h1>
-      <h1>You're from {country}</h1>
+      <p>You're from {country}</p>
+      <p>Admin: {isAdmin}</p>
     </div>
   );
 };
